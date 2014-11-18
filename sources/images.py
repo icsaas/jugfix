@@ -38,7 +38,7 @@ def _load_directory(pattern, stoplist):
     for f in files:
         if extract_number(f) in stoplist: continue
         img = pyslic.Image()
-        img.channels[img.procdna_channel] = f
+        img.channels['dna'] = f
         imgs.append(img)
     return imgs
 
