@@ -1,0 +1,23 @@
+Rand (IC100:watershed:direct_mean): 0.785619218069
+Rand (GNF:watershed:direct_mean): 0.91635082294
+
+Jaccard (IC100:watershed:direct_mean): 1.60726560134
+Jaccard (GNF:watershed:direct_mean): 1.85655910022
+
+Distances(IC100:watershed:direct_mean): 0.367561647006
+Distances (GNF:watershed:direct_mean): 0.362735104971
+
+Hausdorff (IC100:watershed:direct_mean): 19.2836776777
+Hausdorff (GNF:watershed:direct_mean): 34.9645467872
+
+Basics:Added (IC100:watershed:direct_mean): 11.5714285714
+Basics:Added (GNF:watershed:direct_mean): 1.9375
+
+Basics:Missing (IC100:watershed:direct_mean): 5.5306122449
+Basics:Missing (GNF:watershed:direct_mean): 3.0
+
+Basics:Merged (IC100:watershed:direct_mean): 2.36734693878
+Basics:Merged (GNF:watershed:direct_mean): 1.1875
+
+Basics:Split (IC100:watershed:direct_mean): 2.87755102041
+Basics:Split (GNF:watershed:direct_mean): 13.8541666667

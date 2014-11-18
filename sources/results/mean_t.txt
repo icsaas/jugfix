@@ -1,0 +1,23 @@
+Rand (IC100:mean_t): 0.822185376198
+Rand (GNF:mean_t): 0.962385775348
+
+Jaccard (IC100:mean_t): 1.86535346509
+Jaccard (GNF:mean_t): 2.24006645238
+
+Distances(IC100:mean_t): 0.235848417119
+Distances (GNF:mean_t): 0.100995279188
+
+Hausdorff (IC100:mean_t): 24.615397635
+Hausdorff (GNF:mean_t): 26.6034731013
+
+Basics:Added (IC100:mean_t): 3.10204081633
+Basics:Added (GNF:mean_t): 0.875
+
+Basics:Missing (IC100:mean_t): 4.75510204082
+Basics:Missing (GNF:mean_t): 3.6875
+
+Basics:Merged (IC100:mean_t): 5.08163265306
+Basics:Merged (GNF:mean_t): 3.41666666667
+
+Basics:Split (IC100:mean_t): 1.4693877551
+Basics:Split (GNF:mean_t): 1.33333333333

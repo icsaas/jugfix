@@ -1,0 +1,23 @@
+Rand (IC100:roysams_mean_filter_no_AS): 0.839787288569
+Rand (GNF:roysams_mean_filter_no_AS): 0.962040826949
+
+Jaccard (IC100:roysams_mean_filter_no_AS): 1.91877814214
+Jaccard (GNF:roysams_mean_filter_no_AS): 2.21464169358
+
+Distances(IC100:roysams_mean_filter_no_AS): 0.252700203542
+Distances (GNF:roysams_mean_filter_no_AS): 0.0746722188157
+
+Hausdorff (IC100:roysams_mean_filter_no_AS): 16.2325850888
+Hausdorff (GNF:roysams_mean_filter_no_AS): 13.3314196074
+
+Basics:Added (IC100:roysams_mean_filter_no_AS): 7.10204081633
+Basics:Added (GNF:roysams_mean_filter_no_AS): 1.04651162791
+
+Basics:Missing (IC100:roysams_mean_filter_no_AS): 5.91836734694
+Basics:Missing (GNF:roysams_mean_filter_no_AS): 3.3023255814
+
+Basics:Merged (IC100:roysams_mean_filter_no_AS): 2.9387755102
+Basics:Merged (GNF:roysams_mean_filter_no_AS): 2.23255813953
+
+Basics:Split (IC100:roysams_mean_filter_no_AS): 1.71428571429
+Basics:Split (GNF:roysams_mean_filter_no_AS): 1.83720930233

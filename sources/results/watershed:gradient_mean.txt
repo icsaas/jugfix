@@ -1,0 +1,23 @@
+Rand (IC100:watershed:gradient_mean): 0.784087996059
+Rand (GNF:watershed:gradient_mean): 0.904478379143
+
+Jaccard (IC100:watershed:gradient_mean): 1.60433630992
+Jaccard (GNF:watershed:gradient_mean): 1.83072627061
+
+Distances(IC100:watershed:gradient_mean): 0.375295027425
+Distances (GNF:watershed:gradient_mean): 0.301334837613
+
+Hausdorff (IC100:watershed:gradient_mean): 21.7247336306
+Hausdorff (GNF:watershed:gradient_mean): 34.5948989673
+
+Basics:Added (IC100:watershed:gradient_mean): 11.4081632653
+Basics:Added (GNF:watershed:gradient_mean): 1.91666666667
+
+Basics:Missing (IC100:watershed:gradient_mean): 5.42857142857
+Basics:Missing (GNF:watershed:gradient_mean): 2.85416666667
+
+Basics:Merged (IC100:watershed:gradient_mean): 2.95918367347
+Basics:Merged (GNF:watershed:gradient_mean): 2.0
+
+Basics:Split (IC100:watershed:gradient_mean): 2.61224489796
+Basics:Split (GNF:watershed:gradient_mean): 7.72916666667

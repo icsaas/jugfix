@@ -91,7 +91,7 @@ def dist_hausdorff_compare(segmented, ref):
     #revassignments = joint.argmax(1)[:ref.max()+1]                                                      
     values = []
     hausdorff = []
-    for i in xrange(1,segmented.max()+1):
+    for i in xrange(1,int(segmented.max())+1):
         if assignments[i] == 0:
             values += ['bg']
             continue

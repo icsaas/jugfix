@@ -16,11 +16,11 @@ def printresults(name,inputfile):
         print '%-16s&' % ('%.1f/%.1f'  % (scale*values[m,'GNF'],scale*values[m,'IC100'])),
     print r'\\'
 printresults('AS Manual','AS.txt')
-printresults('RC Threshold','rc_t.txt')
+#printresults('RC Threshold','rc_t.txt')
 printresults('Otsu Threshold','otsu.txt')
 printresults('Mean Threshold','mean_t.txt')
 printresults('Watershed (direct)','watershed:direct_mean.txt')
 printresults('Watershed (gradient)','watershed:gradient_mean.txt')
-printresults('Active Masks','active_masks:filtered.txt')
+#printresults('Active Masks','active_masks:filtered.txt')
 printresults("Merging Algorithm",'roysams_mean_filter_no_AS.txt')
 

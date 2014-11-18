@@ -1,0 +1,23 @@
+Rand (IC100:roysam_mean): 0.839638594673
+Rand (GNF:roysam_mean): 0.964227538605
+
+Jaccard (IC100:roysam_mean): 1.97042997348
+Jaccard (GNF:roysam_mean): 2.21895036338
+
+Distances(IC100:roysam_mean): 0.491326324334
+Distances (GNF:roysam_mean): 0.423673887844
+
+Hausdorff (IC100:roysam_mean): 16.6829926695
+Hausdorff (GNF:roysam_mean): 12.5457353692
+
+Basics:Added (IC100:roysam_mean): 33.8979591837
+Basics:Added (GNF:roysam_mean): 25.0208333333
+
+Basics:Missing (IC100:roysam_mean): 3.08163265306
+Basics:Missing (GNF:roysam_mean): 0.3125
+
+Basics:Merged (IC100:roysam_mean): 2.79591836735
+Basics:Merged (GNF:roysam_mean): 1.95833333333
+
+Basics:Split (IC100:roysam_mean): 2.36734693878
+Basics:Split (GNF:roysam_mean): 2.3125
