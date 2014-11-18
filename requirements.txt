@@ -1,0 +1,12 @@
+PIL==1.1.7
+Pillow==2.6.0
+PySLIC==0.6.3
+milk==0.5.3
+morph==0.1.1
+numpy==1.8.1
+objgraph==1.8.0
+pymorph==0.96
+readmagick==1.0.4
+scipy==0.14.0
+six==1.6.1
+redis
