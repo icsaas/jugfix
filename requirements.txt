@@ -1,6 +1,6 @@
 PIL==1.1.7
 Pillow==2.6.0
-PySLIC==0.6.3
+-e git+https://github.com/matrixorz/pyslic.git#egg=pyslic
 milk==0.5.3
 morph==0.1.1
 numpy==1.8.1
