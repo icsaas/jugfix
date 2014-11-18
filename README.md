@@ -5,7 +5,9 @@ source:源码
 
 环境准备:  
 在机器上安装好python,pip包管理工具  
+
 在该根目录下直接安装所需的软件依赖包:   
+sudo apt-get install libfreeimage-dev  
 pip install -r requirements.txt  
 
 代码运行:  
