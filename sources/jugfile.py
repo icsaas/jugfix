@@ -14,7 +14,7 @@ from compare import *
 from watershed import *
 from roysam import compute_roysams, compute_roysams_mean, filter_small_nuclei
 
-thresh_segment = TaskGenerator(pyslic.segmentation.threshold_segment)
+#thresh_segment = TaskGenerator(pyslic.segmentation.threshold_segment)
 
 @TaskGenerator
 def segment_watershed_rc(img,mode='direct'):
@@ -37,42 +37,42 @@ def active_mask2(img):
         return pyslic.segmentation.active_masks(dna,3,1,{3: [8.,4.,2.], 2 : [8.,4.,2.], 1: [2.]},256,1.2,.5,H.argmax()+3)
 
 
-refs = ic100_ref + gnf_ref
+#refs = ic100_ref + gnf_ref
 
 #ic100_ref_full = [extend_R(r) for r in ic100_ref]
 #gnf_ref_full = [extend_R(r) for r in gnf_ref]
 #refs_full = ic100_ref_full + gnf_ref_full
 
-otsu = [thresh_segment(img,'otsu') for img in ic100_imgs + gnf_imgs]
-mean_t = [thresh_segment(img,'mean') for img in ic100_imgs + gnf_imgs]
-rc_t = [thresh_segment(img,'rc') for img in ic100_imgs + gnf_imgs]
+#otsu = [thresh_segment(img,'otsu') for img in ic100_imgs + gnf_imgs]
+#mean_t = [thresh_segment(img,'mean') for img in ic100_imgs + gnf_imgs]
+#rc_t = [thresh_segment(img,'rc') for img in ic100_imgs + gnf_imgs]
 #water_direct_raw = [segment_watershed(img,'direct',thresholding=None,min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
 #water_direct = [segment_watershed(img,'direct',thresholding='otsu',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
 #water_gradient = [segment_watershed(img,'gradient',thresholding='otsu',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
 #water_direct_rc = [segment_watershed(img,'direct',thresholding='murphy_rc',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
 #water_gradient_rc = [segment_watershed(img,'gradient',thresholding='murphy_rc',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
-water_direct_mean = [segment_watershed(img,'direct',thresholding='mean',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
-water_gradient_mean = [segment_watershed(img,'gradient',thresholding='mean',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
+#water_direct_mean = [segment_watershed(img,'direct',thresholding='mean',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
+#water_gradient_mean = [segment_watershed(img,'gradient',thresholding='mean',min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
 #water_gradient_raw = [segment_watershed(img,'gradient',thresholding=None,min_obj_size=2500) for img in ic100_imgs + gnf_imgs]
-active_masks = [active_mask(img) for img in ic100_imgs + gnf_imgs]
-active_masks_filtered = [filter_small_nuclei(img) for img in active_masks]
+#active_masks = [active_mask(img) for img in ic100_imgs + gnf_imgs]
+#active_masks_filtered = [filter_small_nuclei(img) for img in active_masks]
 #active_masks2 = [active_mask2(img) for img in ic100_imgs + gnf_imgs]
 #roysams = compute_roysams(ic100_imgs,gnf_imgs)
-roysams_mean = compute_roysams_mean(ic100_imgs,gnf_imgs)
-roysams_mean_filtered = [filter_small_nuclei(img) for img in roysams_mean]
+#roysams_mean = compute_roysams_mean(ic100_imgs,gnf_imgs)
+#roysams_mean_filtered = [filter_small_nuclei(img) for img in roysams_mean]
 
 def _compare(name,segs,refs):
     compare(refs,ic100_ref,name,segs)
 
-_compare('otsu',otsu,refs)
-_compare('mean_t',mean_t,refs)
-_compare('rc_t',rc_t,refs)
+#_compare('otsu',otsu,refs)
+#_compare('mean_t',mean_t,refs)
+#_compare('rc_t',rc_t,refs)
 #_compare('watershed:direct',water_direct,refs)
 #_compare('watershed:gradient',water_gradient,refs)
 #_compare('watershed:direct_rc',water_direct_rc,refs)
 #_compare('watershed:gradient_rc',water_gradient_rc,refs)
-_compare('watershed:direct_mean',water_direct_mean,refs)
-_compare('watershed:gradient_mean',water_gradient_mean,refs)
+#_compare('watershed:direct_mean',water_direct_mean,refs)
+#_compare('watershed:gradient_mean',water_gradient_mean,refs)
 #_compare('watershed:direct_raw',water_direct_raw,refs)
 #_compare('watershed:gradient_raw',water_gradient_raw,refs)
 #_compare('watershed:direct:full',water_direct,refs_full)
@@ -80,12 +80,12 @@ _compare('watershed:gradient_mean',water_gradient_mean,refs)
 #_compare('watershed:direct_raw:full',water_direct_raw,refs_full)
 #_compare('watershed:gradient_raw:full',water_gradient_raw,refs_full)
 #_compare('active_masks',active_masks,refs)
-_compare('active_masks:filtered',active_masks_filtered,refs)
+#_compare('active_masks:filtered',active_masks_filtered,refs)
 #_compare('active_masks2',active_masks2,refs)
 #_compare('roysam',roysams,refs)
-_compare('roysam_mean',roysams_mean,refs)
+#_compare('roysam_mean',roysams_mean,refs)
 #_compare('roysams_mean_filter',roysams_mean_filtered,refs)
-_compare('roysams_mean_filter_no_AS',roysams_mean_filtered[5:],refs[5:])
+#_compare('roysams_mean_filter_no_AS',roysams_mean_filtered[5:],refs[5:])
 
 
 aabid_refs = ic100_ref[:5] + gnf_ref[:5]

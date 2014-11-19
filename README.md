@@ -3,7 +3,9 @@ data:数据集
 自行将images文件夹添加到data目录下  
 source:源码  
 Coelho2009_ISBI_NuclearSegmentation:  
-[论文A hand-segmented dataset and comparison of algorithms by Luis Pedro Coelho,Aabid Shariff and Robert F.Murphy.DOI相关源码](https://github.com/luispedro/Coelho2009_ISBI_NuclearSegmentation),可以运行通但主要还是通过以下方法对源码进行跟踪.
+[论文A hand-segmented dataset and comparison of algorithms by Luis Pedro Coelho,Aabid Shariff and Robert F.Murphy.DOI相关源码](https://github.com/luispedro/Coelho2009_ISBI_NuclearSegmentation),该源码可以运行通与最新jug兼容.
+
+但主要还是通过以下方法对源码进行跟踪.
 
 环境准备:  
 在机器上安装好python,pip包管理工具  
@@ -21,3 +23,4 @@ pip install -r requirements.txt  (#numpy cast bug已解决)
 python jug.py execute #执行计算任务  
 运行以下语句  
 python jug.py status  #查看任务执行情况  
+这里注意的是没有使用最新jug,二是使用juglib里面的旧版本的jug
