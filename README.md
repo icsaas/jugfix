@@ -9,7 +9,9 @@ Coelho2009_ISBI_NuclearSegmentation:
 在机器上安装好python,pip包管理工具  
 
 在该根目录下直接安装所需的软件依赖包:   
-sudo apt-get install libfreeimage-dev #解决FreeImage报错,主要是应为缺少freeimage开发库.  
+$sudo apt-get install libfreeimage-dev #解决FreeImage报错,
+$sudo apt-get install libmagick++-dev  
+主要是应为缺少freeimage开发库.  
 使用如下命令安装相关python依赖包:  
 pip install -r requirements.txt  (#numpy cast bug已解决)
 
